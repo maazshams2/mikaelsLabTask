@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: runner.MyRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 1.532 s <<< FAILURE! - in runner.MyRunner
+GI-549(End to End tests)  Time elapsed: 0.566 s  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: core.exceptions.TestsConfigurationException: Unable to read property file with name 'config.properties' - file not found
+
+GI-549(End to End tests)  Time elapsed: 0.566 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "[Order] Screen is opened 'multiple'" is undefined
+
+GI-549(End to End tests)  Time elapsed: 0.566 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "[Itinerary] User opens page with the option shown as Create Itinerary" is undefined
+
+GI-549(End to End tests)  Time elapsed: 0.566 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "[Itinerary] User clicks on Upload File button" is undefined
+
+GI-549(End to End tests)  Time elapsed: 0.566 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "[Itinerary] User select file from local systems" is undefined
+
+GI-549(End to End tests)  Time elapsed: 0.566 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "[Itinerary] User will be prompted to Upload files from a local system" is undefined
+
+GI-549(End to End tests)  Time elapsed: 0.566 s  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "[Itinerary] User will be shown green highlighted colour" is undefined
+

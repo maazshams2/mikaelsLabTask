@@ -1,0 +1,207 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11313754400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.beforeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User signs up, updates profile and password and finally deletes account",
+        "description": "",
+        "id": "end-to-end-tests;user-signs-up--updates-profile-and-password-and-finally-deletes-account",
+        "after": [
+          {
+            "result": {
+              "duration": 711207000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4561721400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "[SignUp] User signs up",
+            "match": {
+              "location": "SignUp.signup_User_signs_up()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1566091900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "[Account] User navigates to My Account",
+            "match": {
+              "location": "Account.account_User_navigates_to_My_Accounts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2877621300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "[Account] User updates profile information",
+            "match": {
+              "location": "Account.account_User_updates_profile_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1420859000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "[Home] User logouts from application",
+            "match": {
+              "location": "Home.home_User_logouts_from_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233002400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "[Home] Verify user is logged out from application",
+            "match": {
+              "location": "Home.home_Verify_user_is_logged_out_from_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4630417400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.beforeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User logins to application and logouts",
+        "description": "",
+        "id": "end-to-end-tests;user-logins-to-application-and-logouts",
+        "after": [
+          {
+            "result": {
+              "duration": 581536500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3956141900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "[Login] User logins to application",
+            "match": {
+              "location": "Login.login_User_logins_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1456009300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "[Account] User navigates to My Account",
+            "match": {
+              "location": "Account.account_User_navigates_to_My_Accounts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2604829800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "[Account] User updates password",
+            "match": {
+              "location": "Account.account_User_updates_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using class name\u003dalert-info\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027CRKRL-SHAMSMAA1\u0027, ip: \u0027172.24.64.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat pages.e2e.PageAccount.getAlertInfo(PageAccount.java:99)\r\n\tat stepDefinition.Account.account_User_deletes_newly_created_account(Account.java:51)\r\n\tat ✽.[Account] User deletes newly created account(src/test/resources/features/E2E.feature:16)\r\n",
+              "duration": 13007364000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "[Account] User deletes newly created account",
+            "match": {
+              "location": "Account.account_User_deletes_newly_created_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "[Home] Verify account is deleted",
+            "match": {
+              "location": "Home.home_Verify_account_is_deleted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          }
+        ]
+      }
+    ],
+    "name": "End to End tests",
+    "description": "",
+    "id": "end-to-end-tests",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/E2E.feature",
+    "tags": []
+  }
+]
